@@ -1,0 +1,122 @@
+/*
+body {
+    align-self: center;
+    color: blue;
+}
+header {
+    background: red;
+}
+*/
+body {
+    color: #fff;
+    margin: 0;
+    line-height: 1.6;
+    background-color: rgb(216, 34, 39);
+}
+.header {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "nuka_cola"
+    "fyrirsogn"
+    "verkefni"
+    "sjameir"
+    ;
+}
+.hringur {
+    margin: auto;
+    align-self: center;
+    height: 300px;
+    width: 300px;
+/*    background-image: url(https://seeklogo.com/images/N/nuka-cola-logo-53E8D124C4-seeklogo.com.png);*/
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.nuka_cola {
+    margin: auto;
+    align-self: center;
+    padding-top: 20px;
+}
+.fyrirsogn {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.sjameir {
+    display: block;
+    border: solid;
+    margin: 1em;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right , rgb(100, 133, 255), rgb(0, 115, 255), rgb(100, 133, 255));
+}
+.verkefni {
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "linkar"
+    "efni"
+    ;
+}
+.beige {
+    background-image: linear-gradient(to right, rgb(230, 245, 25), rgb(230, 245, 85), rgb(230, 245, 25));
+    display: block;
+    border: solid;
+}
+.linkar {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "a1 a2"
+    ;
+}
+.a1 {
+    display: block;
+    border: solid;
+    background-image: linear-gradient(to right , rgb(100, 133, 255), rgb(0, 115, 255), rgb(100, 133, 255));
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.a2 {
+    display: block;
+    border: solid;
+    background-image: linear-gradient(to right , rgb(100, 133, 255), rgb(0, 115, 255), rgb(100, 133, 255));
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.efni {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.aa {
+    display: block;
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.ab {
+    display: block;
+    border: solid rgb(100, 133, 255, 0.1);
+    background-color: rgba(0, 115, 255, 0.1);
+    font-family: 'Roboto Slab', serif;
+    margin: 3em;
+    padding: 10px;
+}
+.foot {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "nav1 nav2 nav3";
+}
+.topnav {
+    display: block;
+    border: 2px dashed;
+    margin: 1em;
+    text-align: center;
+}
