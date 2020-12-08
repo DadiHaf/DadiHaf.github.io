@@ -1,0 +1,252 @@
+/*
+body {
+    align-self: center;
+    color: blue;
+}
+header {
+    background: red;
+}
+*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #fff;
+    margin: 0;
+    line-height: 1.6;
+    background-color: rgb(216, 34, 39);
+}
+.header {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "fyrirsogn"
+    "hringur"
+    "verkefni"
+    "sjameir"
+    ;
+}
+.hringur {
+    margin: auto;
+    align-self: center;
+    height: 240px;
+    width: 240px;
+    background-image: url(MindlessThatAustralianshelduck-max-1mb.gif);
+    border-radius: 50%;
+}
+.nuka_world {
+    margin-left: -40px;
+/*    align-self: center;*/
+    padding-top: 60px;
+}
+.fyrirsogn {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.sjameir {
+    display: block;
+    border: solid;
+    margin: 1em;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: rgb(236, 222, 26);
+}
+.verkefni {
+    text-align: center;
+}
+.menu {
+    display: block;
+    border: 5px solid;
+    display: grid;
+}
+.adalefni {
+    display: block;
+    border: 5px solid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nuka-cola-poster sag"
+    "nuka-cola-poster kid"
+    "tbp drg"
+    "saf gaz"
+    ;
+}
+.nuka-cola-poster {
+    max-width: 100%;
+    height: auto;
+}
+.velkominn {
+    text-align: center;
+}
+.sag {
+    
+}
+.kid {}
+.tbp {}
+.drg {}
+.saf {}
+.gaz {}
+.lina {
+    border-bottom: solid;
+}
+/*main {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "linkar"
+    "efni"
+    ;
+}*/
+.innermenu {
+    background-color: rgb(236, 222, 26);
+    text-align: center;
+    border-bottom: solid;
+/*    border: 5px solid; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "im1 im2 im3"
+    "im4 im5 im6"
+    ;
+}
+.beige {
+    background-image: linear-gradient(to right, rgb(230, 245, 25), rgb(230, 245, 85), rgb(230, 245, 25));
+    display: block;
+    border: solid;
+}
+.linkar {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "a1 a2"
+    ;
+}
+.a1 {
+    display: block;
+    border: solid;
+    background-image: linear-gradient(to right , rgb(100, 133, 255), rgb(0, 115, 255), rgb(100, 133, 255));
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.a2 {
+    display: block;
+    border: solid;
+    background-image: linear-gradient(to right , rgb(100, 133, 255), rgb(0, 115, 255), rgb(100, 133, 255));
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.efni {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.aa {
+    display: block;
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.ab {
+    display: block;
+    border: solid rgb(100, 133, 255, 0.1);
+    background-color: rgba(0, 115, 255, 0.1);
+    font-family: 'Roboto Slab', serif;
+    margin: 3em;
+    padding: 10px;
+}
+.foot {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "nav1 nav2 nav3";
+}
+.topnav {
+    display: block;
+    border: 2px dashed;
+    margin: 1em;
+    text-align: center;
+}
+.button {
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 1.5em;
+    font-size: 1.75em;
+/*    border: 1px solid #fff;*/
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    background-image: url(small-nuka-cola-cap-2.png);
+    padding: 0 .1em .2em .1em;
+}
+@media screen and (min-width: 0em) {
+    .nuka_world_map {
+        width: 250px;
+        overflow-x:scroll;     
+        white-space: nowrap;
+    }
+    .slide {
+        background: #ccc;
+        height: 200px;
+        display: inline-block;
+        width: 200px;
+    }
+}
+@media screen and (min-width: 30em) {
+    .nuka_world_map {
+        width: 300px;
+        overflow-x:scroll;     
+        white-space: nowrap;
+    }
+    .slide {
+        background: #ccc;
+        height: 200px;
+        display: inline-block;
+        width: 1055px;
+    }
+}
+@media screen and (min-width: 37.5em) {
+    .nuka_world_map {
+        width: 530px;
+        overflow-x:scroll;
+        white-space: nowrap;
+    }
+    .slide {
+        background: #ccc;
+        height: 200px;
+        display: inline-block;
+        width: 1055px;
+    }
+}
+@media screen and (min-width: 48em) {
+    .nuka_world_map {
+        width: 740px;
+        overflow-x:scroll;
+        white-space: nowrap;
+    }
+    .slide {
+        background: #ccc;
+        height: 200px;
+        display: inline-block;
+        width: 1055px;
+    }
+}
+@media screen and (min-width: 60em) {
+    .nuka_world_map {
+        width: 930px;
+        overflow-x:scroll;
+        white-space: nowrap;
+    }
+    .slide {
+        background: #ccc;
+        height: 200px;
+        display: inline-block;
+        width: 1055px;
+    }
+}
